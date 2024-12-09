@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* Custom styles for the navbar brand */
+
+.about-section, .houses-section {
+    padding: 60px 0;
+}
+
+.about-section img, .houses-section img {
+    border-radius: 10px;
+}
+
+.house-card {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.house-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Timeline CSS */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #800000;
+}
+
+.timeline-item .timeline-content {
+    padding: 10px 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+    color: #800000;
+}
+.houseimg{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    text-align: left;
+    margin-top: 2;
+    margin-bottom: -50px;
+}

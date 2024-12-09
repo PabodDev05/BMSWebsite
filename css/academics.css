@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* Custom styles for the navbar brand */
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ffd700;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #ffd700;
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-item img {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+#overlay-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#academic-papers .card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+#academic-papers .card:hover {
+    transform: scale(1.05);
+}
+
+#academic-papers .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#academic-papers .btn-primary {
+    background-color: #800000;
+    border-color: #800000;
+    color: gold;
+}
+
+#academic-papers .btn-primary:hover {
+    background-color: #660000;
+    border-color: #660000;
+    color: gold;
+}
+.card-body img{
+    height: 50px;
+    width: 50px;
+}

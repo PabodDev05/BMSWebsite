@@ -1,0 +1,51 @@
+.news-section {
+    background-color: #f8f5f5; /* White background */
+}
+
+.news-section .news-card {
+    margin-bottom: 30px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Black shadow */
+    border: none;
+    height: 500px;
+}
+
+.news-section .news-card img {
+    border-radius: 5px;
+}
+
+.news-section .news-card .card-body {
+    padding: 20px;
+}
+
+.news-section .news-card .card-body h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.news-section .news-card .card-body p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.news-section .news-card .card-body button {
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.news-section .news-card .card-body button:hover {
+    text-decoration: underline;
+}
+.modal-content {
+    background-color: #fff;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-body {
+    color: #343a40;
+}

@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* Custom styles for the navbar brand */
+.navbar-brand {
+    font-size: 1.3rem; /* Increased font size */
+    font-weight: bold;
+    color: #474747;
+    margin-top: -10px;
+}
+
+/* Custom styles for the body */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Custom styles for school motto */
+.school_motor {
+    font-size: 1rem;
+    margin-top: -5px;
+}
+/* Custom styles for the navbar toggler */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='gold' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Slide-in menu for mobile */
+@media (max-width: 991px) {
+    #navbarNav {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Hide offscreen initially */
+        width: 250px;
+        height: 100%;
+        background-color: #ffffff;
+        transition: left 0.3s ease-in-out;
+        z-index: 9999;
+    }
+
+    #navbarNav.show {
+        left: 0; /* Slide in */
+    }
+
+    /* Center the nav links in the collapsed navbar */
+    .collapse.navbar-collapse {
+        text-align: center;
+        padding-top: 60px; /* Adjust padding to center vertically */
+    }
+
+    .collapse.navbar-collapse .navbar-nav {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collapse.navbar-collapse .nav-item {
+        margin-bottom: 10px; /* Add some space between items */
+    }
+
+    /* Close button styles */
+    .navbar-toggler.close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+        border: none;
+        background: none;
+    }
+
+    /* Overlay styles */
+    .navbar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .navbar-overlay.show {
+        display: block;
+    }
+}
+
+/* Ensure navbar links are visible in desktop view */
+@media (min-width: 992px) {
+    .collapse.navbar-collapse {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+
+    .navbar-toggler.close-btn {
+        display: none;
+    }
+
+    #navbarNav {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        transition: none;
+    }
+
+    .navbar-overlay {
+        display: none;
+    }
+}
+
+
+/* Custom styles for the hero banner */
+.hero {
+    position: relative;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.hero .hero-text {
+    z-index: 1;
+}
+
+/* Custom styles for new section cards */
+.card-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.card img.icon {
+    width: 60px; /* Adjust the size of the icons */
+    height: 60px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* News section styles */
+.news-section {
+    background-color: #800000;
+    color: gold;
+    padding: 50px 0;
+}
+.news-section h2 {
+    color: gold;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.news-card {
+    background-color: gold;
+    color: #800000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.news-card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.news-card p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.news-card a {
+    color: #800000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-card a:hover {
+    text-decoration: underline;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.view-more-news {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.view-more-news:hover {
+    text-decoration: underline;
+    color: gold;
+}
+/* Custom styles for the carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: maroon;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: gold;
+}
+/* News card styles */
+.news-card {
+    height: 100%;
+    background-color: gold;
+    color: #800000;
+    border-radius: 10px;
+    padding: 20px;
+    height: 480px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 50%;
+}
+
+.news-card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.news-card p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.news-card a {
+    color: #800000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-card a:hover {
+    text-decoration: underline;
+}
+#school-uniform {
+    background-color: #f8f9fa;
+  }
+  
+  #school-uniform h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #school-uniform h3 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #school-uniform .img-fluid {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  #school-uniform p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  #school-uniform .btn-primary {
+    background-color:  #800000;
+    border-color:  #800000;
+  }
+  
+  #school-uniform .btn-primary:hover {
+    background-color:  #800000;
+    border-color:  #800000;
+  }
+
+.section-title {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #474747;
+    letter-spacing: 0.1rem;
+}
+
+.event-card {
+    display: flex;
+    align-items: center;
+    background-color: #800000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid white;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f0f0f;
+    border-radius: 5px;
+    padding: 10px;
+    color: gold;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.date-day {
+    font-size: 2rem;
+}
+
+.date-month {
+    font-size: 1rem;
+}
+
+.event-info {
+    color: gold;
+    flex-grow: 1;
+}
+
+.see-all-events {
+    color: #800000;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.see-all-events:hover {
+    text-decoration: underline;
+    color: #800000;
+}
+.history-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    color: #343a40;
+}
+.history-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+.history-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+.history-section a {
+    color: #800000;
+    text-decoration: none;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 2px;
+}
+.history-section a:hover {
+    color: #800000;
+    border-color: #800000;
+}
+.footer {
+    background-color: #800000;
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .contact-info i {
+    margin-right: 10px;
+}
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+.footer .social-icons a:hover {
+    color: gold;
+}
+.footer .footer-links a {
+    margin-right: 20px;
+}
+.footer .brand-logo img {
+    height: 40px;
+}
+.footer .copyright {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    margin-bottom: -30px;
+}
